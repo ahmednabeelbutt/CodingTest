@@ -1,0 +1,1 @@
+SELECT branch.country, branch.state ,branch.id, avg(loan.value) from branch join loan on branch.id= loan.branch_id where is_Active=1 GROUP by state
